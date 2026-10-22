@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Andy (Jixin) Li</title>
+  <meta name="description" content="Andy (Jixin) Li — AI software engineer, MCDS student at Carnegie Mellon, CS & Economics at UIUC." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">Andy Li</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#photography">Photography</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">◐</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-text">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Andy <em>(Jixin)</em> Li</h1>
+        <p class="tagline">
+          An AI software engineer who builds LLM benchmarks, document-understanding systems,
+          and human-in-the-loop ML tools.
+        </p>
+        <p class="sub">
+          MCDS at Carnegie Mellon University<br />
+          B.S. Computer Science &amp; Economics, UIUC
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#experience">See my work</a>
+          <a class="btn" href="Andy_Li_Resume_SDE.pdf" target="_blank" rel="noopener">Résumé</a>
+          <a class="btn" href="mailto:andyli031210@gmail.com">Email me</a>
+        </div>
+      </div>
+      <figure class="portrait">
+        <img src="assets/portrait.jpg" alt="Andy Li in graduation gown at the University of Illinois" />
+        <figcaption>Urbana-Champaign, spring 2026</figcaption>
+      </figure>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="container section">
+      <h2>About</h2>
+      <div class="about-grid">
+        <p>
+          I'm a graduate student in the Master of Computational Data Science program at
+          Carnegie Mellon University. Before that I studied Computer Science and Economics at the
+          University of Illinois Urbana-Champaign, graduating with a 3.96 GPA.
+        </p>
+        <p>
+          My work sits where machine learning meets real software: evaluating LLMs for agriculture
+          at NCSA, building AI-assisted annotation workflows at Intel, and extracting structured data
+          from financial documents. I like turning research models into tools people actually use.
+        </p>
+      </div>
+      <dl class="facts">
+        <div>
+          <dt>Now</dt>
+          <dd>MCDS at Carnegie Mellon, Pittsburgh</dd>
+        </div>
+        <div>
+          <dt>Interested in</dt>
+          <dd>LLM evaluation, document AI, human-in-the-loop ML</dd>
+        </div>
+        <div>
+          <dt>Previously</dt>
+          <dd>AI Software Engineer Graduate Intern, Intel<br />AI Software Engineer Intern, NCSA</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="container section">
+      <h2>Education</h2>
+      <div class="cards two">
+        <article class="card">
+          <div class="card-head">
+            <h3>Carnegie Mellon University</h3>
+            <span class="date">Expected May 2028</span>
+          </div>
+          <p class="role">Master of Computational Data Science (MCDS)</p>
+          <p class="muted">School of Computer Science · Pittsburgh, PA</p>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <h3>University of Illinois Urbana-Champaign</h3>
+            <span class="date">Sep 2022 – May 2026</span>
+          </div>
+          <p class="role">B.S. in Computer Science &amp; Economics</p>
+          <p class="muted">Cumulative GPA: 3.96 / 4.00</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="container section">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        <li class="tl-item">
+          <div class="tl-meta">
+            <span class="date">Jun – Aug 2026</span>
+            <span class="muted">Hillsboro, OR</span>
+          </div>
+          <div class="tl-body">
+            <h3>Intel Corporation</h3>
+            <p class="role">AI Software Engineer Graduate Intern</p>
+            <p class="summary">AI-assisted industrial defect annotation and evaluation framework using Intel Geti Active Learning.</p>
+            <ul>
+              <li>Benchmarked Geti's AI-assisted annotation against manual labeling and a traditional YOLO workflow — <b>cut annotation time by 50%+</b> while keeping <b>90% accuracy</b> across industrial defect categories.</li>
+              <li>Built prompt-engineering pipelines to compare annotation strategies across confidence thresholds, <b>narrowing the precision–recall gap by ~30%</b>.</li>
+              <li>Wrote Intel's internal benchmarking guidelines for AI-assisted annotation, adopted by <b>50+ engineers</b>.</li>
+            </ul>
+            <div class="tags"><span>Active Learning</span><span>YOLO</span><span>Computer Vision</span><span>Evaluation</span></div>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <div class="tl-meta">
+            <span class="date">Jan 2025 – Mar 2026</span>
+            <span class="muted">Champaign, IL</span>
+          </div>
+          <div class="tl-body">
+            <h3>National Center for Supercomputing Applications</h3>
+            <p class="role">AI Software Engineer Intern</p>
+
+            <div class="project">
+              <h4>AI-AgriBench (AI-FARM)</h4>
+              <p class="summary">A benchmark for evaluating LLMs on agricultural questions.</p>
+              <ul>
+                <li>Multi-stage filtering pipeline that distilled <b>~5,000 high-quality QA pairs</b> from <b>399,199</b> Extension publications using rule-based and semantic filtering (all-mpnet-base-v2) across 8 agronomic categories.</li>
+                <li>GPT-4o-mini QA generation with the “yourbench” workflow, producing long-form answers with inline citations for domain-expert review.</li>
+                <li>LLM-as-a-Judge framework with GPT-OSS-120b scoring Accuracy, Relevance, Completeness and Parsimony.</li>
+                <li>Shipped a public leaderboard site; the project received Gates Foundation support for further development.</li>
+              </ul>
+            </div>
+
+            <div class="project">
+              <h4>Feat2Spec (SPIN Program)</h4>
+              <p class="summary">An LLM-driven framework for soil spectrum generation and property prediction.</p>
+              <ul>
+                <li>Used SOGM, a text-conditioned diffusion model, to simulate soil reflectance (400–2499 nm) from 13 soil properties — <b>5.5% RMSE, R² = 0.86</b> on unseen spectra.</li>
+                <li>Designed a multithreaded CNN to predict soil properties from 2,151-band spectra.</li>
+                <li>Wired both models into LLaMA 3 with a <b>Proposer → Verifier → Executor</b> reasoning loop, plus a natural-language interface.</li>
+              </ul>
+            </div>
+            <div class="tags"><span>LLM Evaluation</span><span>Diffusion Models</span><span>PyTorch</span><span>LLaMA 3</span></div>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <div class="tl-meta">
+            <span class="date">Feb – May 2025</span>
+            <span class="muted">Remote</span>
+          </div>
+          <div class="tl-body">
+            <h3>Agricultural Bank of China</h3>
+            <p class="role">AI Software Engineer Intern</p>
+            <p class="summary">Document understanding system for financial PDFs using multi-modal LLMs.</p>
+            <ul>
+              <li>Fine-tuned LayoutLMv3 and Donut on internal financial reports for structured data extraction.</li>
+              <li>Combined PaddleOCR with CRF-based token alignment for entity segmentation across multi-page reports.</li>
+              <li>Built a Doccano annotation loop mixing weak labels with manual corrections.</li>
+              <li>Designed a RAG-style pipeline for semantic retrieval, summarization and cross-document linkage.</li>
+            </ul>
+            <div class="tags"><span>Multi-modal LLMs</span><span>OCR</span><span>RAG</span></div>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <div class="tl-meta">
+            <span class="date">Dec 2024 – Feb 2025</span>
+            <span class="muted">Remote</span>
+          </div>
+          <div class="tl-body">
+            <h3>SeeU International Inc.</h3>
+            <p class="role">AI Software Engineer Intern</p>
+            <p class="summary">LLM-powered job recommendation system for resume–job matching.</p>
+            <ul>
+              <li>Matched resumes to jobs with GPT-3.5/4 and embedding similarity, <b>cutting manual review time by 40%+</b> for 500+ students.</li>
+              <li>Python pipeline turning 1,000+ unstructured documents per week into structured JSON embeddings; shipped via Git + Docker CI/CD.</li>
+            </ul>
+            <div class="tags"><span>Python</span><span>OpenAI API</span><span>Docker</span></div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="container section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div>
+          <h3>Languages</h3>
+          <div class="tags"><span>Python</span><span>C++</span><span>Java</span><span>C#</span><span>JavaScript</span><span>TypeScript</span><span>Go</span><span>SQL</span><span>Kotlin</span></div>
+        </div>
+        <div>
+          <h3>ML &amp; Data</h3>
+          <div class="tags"><span>PyTorch</span><span>TensorFlow</span><span>scikit-learn</span><span>NumPy</span><span>Pandas</span><span>LLMs</span><span>RAG</span><span>NLP</span><span>Active Learning</span></div>
+        </div>
+        <div>
+          <h3>Engineering</h3>
+          <div class="tags"><span>React</span><span>Node.js</span><span>Spring Boot</span><span>Flask</span><span>REST APIs</span><span>Microservices</span><span>Distributed Systems</span></div>
+        </div>
+        <div>
+          <h3>Tools</h3>
+          <div class="tags"><span>Linux</span><span>Git</span><span>Docker</span><span>Bash</span><span>CI/CD</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHOTOGRAPHY: add a photo by dropping it in assets/photos and copying a <figure> -->
+    <section id="photography" class="container section">
+      <h2>Photography</h2>
+      <p class="muted section-lead">When I'm away from the keyboard, I'm usually somewhere with a film camera.</p>
+      <div class="gallery">
+        <div class="row feature">
+          <div class="stack">
+            <figure style="--r: 1.4925"><img src="assets/photos/photo-12.jpg" alt="Bronze lion outside the Art Institute of Chicago" loading="lazy" /><figcaption>Art Institute of Chicago</figcaption></figure>
+            <figure style="--r: 1.508"><img src="assets/photos/photo-03.jpg" alt="Train platform at dusk under warm lights" loading="lazy" /><figcaption>Waiting for the L, Chicago</figcaption></figure>
+            <figure style="--r: 1.5094"><img src="assets/photos/photo-10.jpg" alt="Young people gathered on a rooftop with the city behind them" loading="lazy" /><figcaption>Rooftop</figcaption></figure>
+          </div>
+          <figure class="tower" style="--r: 0.6631"><img src="assets/photos/photo-05.jpg" alt="Black-and-white TV tower against a grey sky" loading="lazy" /><figcaption>Tower</figcaption></figure>
+          <div class="stack">
+            <figure style="--r: 1.508"><img src="assets/photos/photo-02.jpg" alt="Lifeguard chair beside an empty pool" loading="lazy" /><figcaption>No Diving</figcaption></figure>
+            <figure style="--r: 1.508"><img src="assets/photos/photo-07.jpg" alt="An adult and a child at the edge of a misty sea" loading="lazy" /><figcaption>By the Sea</figcaption></figure>
+            <figure style="--r: 1.5094"><img src="assets/photos/photo-09.jpg" alt="Black-and-white Chicago skyline" loading="lazy" /><figcaption>Michigan Avenue, Chicago</figcaption></figure>
+          </div>
+        </div>
+        <div class="row">
+          <figure style="--r: 1.5094"><img src="assets/photos/photo-13.jpg" alt="Yellow tour boat passing under the DuSable Bridge on the Chicago River" loading="lazy" /><figcaption>Seadog on the Chicago River</figcaption></figure>
+          <figure style="--r: 1.5094"><img src="assets/photos/photo-01.jpg" alt="Double exposure of a domed building and a glass building among trees" loading="lazy" /><figcaption>Double Exposure</figcaption></figure>
+          <figure style="--r: 1.508"><img src="assets/photos/photo-06.jpg" alt="White tower with a round crown against a pale sky" loading="lazy" /><figcaption>The Crown</figcaption></figure>
+        </div>
+        <div class="row">
+          <figure style="--r: 1.5094"><img src="assets/photos/photo-08.jpg" alt="Silhouette of an equestrian statue against the sun" loading="lazy" /><figcaption>Against the Light</figcaption></figure>
+          <figure style="--r: 1.508"><img src="assets/photos/photo-04.jpg" alt="Roller coaster climbing into the sky, black and white" loading="lazy" /><figcaption>The Climb</figcaption></figure>
+          <figure style="--r: 1.6327"><img src="assets/photos/photo-11.jpg" alt="Summer beach in front of high-rises" loading="lazy" /><figcaption>Lakefront, Chicago</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+      <button class="lb-close" aria-label="Close">×</button>
+      <button class="lb-nav lb-prev" aria-label="Previous photo">‹</button>
+      <figure>
+        <img alt="" />
+        <figcaption></figcaption>
+      </figure>
+      <button class="lb-nav lb-next" aria-label="Next photo">›</button>
+    </dialog>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container section contact">
+      <h2>Get in touch</h2>
+      <p>I'm open to software engineering and ML roles. The fastest way to reach me is email.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="mailto:andyli031210@gmail.com">andyli031210@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/andy-li-66a1532ab/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/andyli-cmu" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Andy (Jixin) Li</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
